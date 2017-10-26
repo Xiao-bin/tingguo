@@ -1,0 +1,523 @@
+/*复位样式*/
+
+body, a, textarea, input {
+    font-family: SourceHanSans, Microsoft YaHei, "宋体", Verdana, Geneva, sans-serif;
+}
+
+html, body, div, dl, dt, dd, ul, ol, li, p, h1, h2, h3, h4, h5, h6, th, td, hr, blockquote {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*公共样式*/
+body, html {
+    font-size: 18px;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+.main h1 {
+    font-size: 30px;
+}
+
+.main h3 {
+    font-size: 27px;
+}
+
+/*工具箱*/
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfloat:after, .clearfloat:before {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*index*/
+
+.nav {
+   /* background: pink;*/
+    /*overflow: hidden;*/
+  /*  padding-top: 40px;*/
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left:150px;
+    z-index:10;
+}
+
+.nav img {
+    width: 110px;
+    height: 62px;
+}
+
+.nav ul li {
+    height: 62px;
+    line-height: 62px;
+    float: left;
+}
+
+.nav ul li a {
+    color: white;
+    padding-bottom: 8px;
+}
+
+.nav ul li a:hover {
+    border-bottom: 1px #fff solid;
+}
+
+.nav ul li + li {
+    margin-left: 40px;
+
+}
+
+.page01 {
+    transition: 3s ease;
+    min-height: 500px;
+    background: #657faf;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 75px;
+}
+
+.page01 .page01-left {
+    color: #3bfa61;
+    width: 330px;
+    margin-top: 230px;
+    animation: page01-left 1s ease;
+}
+
+.page01 .page01-left img {
+    width: 65px;
+}
+
+.page01 .page01-right {
+    position: relative;
+    width: 540px;
+    height: 545px;
+    background: url(../images/p1.png) no-repeat;
+}
+
+.page01 .page01-right .p1-1 {
+    position: absolute;
+    left: 99px;
+    top: 192px;
+    animation: p1-1 2s infinite linear;
+}
+
+.page01 .page01-right .p1-3 {
+    position: absolute;
+    left: 40px;
+    top: 116px;
+    animation: p1-3 3s infinite linear;
+}
+
+.page01 .page01-right .p1-4 {
+    position: absolute;
+    background: url("../images/p1-4.png") no-repeat bottom left;
+    width: 11px;
+    height: 13px;
+    top: 14px;
+    left: 154px;
+    z-index: 1;
+    animation: p1-4 10s .2s infinite ease-in-out both;
+}
+
+.page01 .page01-right .p1-5 {
+    position: absolute;
+    left: 78px;
+    top: 48px;
+
+    animation: p1-5 10s .2s infinite linear both;
+}
+
+.page01 .page01-right .p1-6 {
+    position: absolute;
+    width: 95px;
+    height: 35px;
+    background: url(../images/p1-6.png);
+    left: 146px;
+    top: 102px;
+    animation: p1-6 3s infinite linear;
+}
+
+.page01 .page01-right .p1-7-run {
+    position: absolute;
+    z-index: 6;
+    animation: p1-7-run 10s 0.2s infinite linear both;
+}
+
+.page01 .page01-right .p1-7 {
+    position: absolute;
+    width: 30px;
+    height: 65px;
+    background: url(../images/p1-7.png) left no-repeat;
+    animation: p1-7 1s infinite step-start;
+    left: 125px;
+    top: 73px;
+}
+
+.page01 .page01-right .p1-11 {
+    position: absolute;
+    left: 145px;
+    top: 69px;
+    z-index: 5;
+    width: 28px;
+    height: 29px;
+}
+
+.page01 .page01-right .p2-1 {
+    position: absolute;
+    left: 276px;
+    top: 21px;
+    animation: p2-1 5s linear infinite;
+}
+
+.page01 .page01-right .p2-2 {
+    position: absolute;
+    opacity: 0;
+    left: 238px;
+    top: 29px;
+    animation: p2-2 8s .2s linear infinite;
+}
+
+/* .page01 .page01-right .p1-13 {
+    position: absolute;
+    left: 307px;
+    top: 67px;
+    width: 195px;
+    height: 149px;
+} */
+
+.page01 .page01-right .p2-3{
+	position: absolute;
+	width: 250px;
+	height: 200px;
+	left: 302px;
+	top: 64px;
+}
+.page01 .page01-right .p2-3 ul li{
+   
+    float: left;
+    color:#f2f2f2;
+    width: 58px;
+    font-size: 14px;
+    height: 24px;
+   background:url(../images/p2-4.png) no-repeat;
+   margin:0 5px 10px;
+
+   text-align: center;
+}
+
+.page01 .page01-right .p2-3 ul li.active{
+    margin-left: 0px;
+    margin-right: 10px;
+    background:url(../images/p2-3.png) no-repeat;
+}
+.page01 .page01-right .p2-3 ul .clear {
+    clear:both;
+}
+
+ .p2-3 li:nth-child(1),.p2-3 li:nth-child(6),.p2-3 li:nth-child(11){
+    animation: p2-3 0.5s 6s ease-in-out both; 
+}
+.p2-3 li:nth-child(3),.p2-3 li:nth-child(8),.p2-3 li:nth-child(9){
+    animation: p2-3 0.5s 6.5s ease-in-out both; 
+}
+ .p2-3 li:nth-child(2),.p2-3 li:nth-child(4),.p2-3 li:nth-child(12){
+    animation: p2-3 0.5s 7s ease-in-out both; 
+}
+ .p2-3 li:nth-child(5),.p2-3 li:nth-child(7), .p2-3 li:nth-child(10){
+    animation: p2-3 0.5s 7.5s ease-in-out both; 
+}
+
+
+
+
+.page01 .page01-right .p2-5 {
+    position: absolute;
+    left: 445px;
+    top: 140px;
+    animation: p2-5 2s linear infinite;
+}
+
+.page01 .page01-right .p3-1 {
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    background: url(../images/p3-2.png);
+    left: 0px;
+    top: 283px;
+    animation: p3-1 2s 1s infinite alternate ease-in-out both;
+}
+
+.page01 .page01-right .p3-8 {
+    position: absolute;
+    left: 12px;
+    top: 346px;
+
+}
+
+.page01 .page01-right .p3-3 {
+    position: absolute;
+    left: 166px;
+    top: 305px;
+
+    animation: p2-1 4s 0.2s linear infinite;
+}
+
+.page01 .page01-right .p3-4 {
+    position: absolute;
+    left: 64px;
+    top: 332px;
+    animation: p2-1 4s 2s linear infinite;
+}
+
+.page01 .page01-right .p4-1 {
+    position: absolute;
+    width: 25px;
+    height: 19px;
+    background: url(../images/p4-1.png) no-repeat;
+    left: 353px;
+    top: 407px;
+
+    animation: p4-1 1s infinite alternate ease-in-out both;
+}
+
+.page01 .page01-bottom {
+    position: relative;
+    left: -380px;
+    top: 565px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.page {
+    overflow: hidden;
+    min-height: 500px;
+    padding-top: 150px;
+}
+
+.page-left {
+    width: 500px;
+    margin: 100px 70px 0 30px;
+}
+
+.page-left .title-logo {
+
+    margin-bottom: 10px;
+}
+
+.page-left .title-logo .logo {
+    margin-right: 10px;
+    line-height: 73px;
+    font-size: 40px;
+    font-weight: 100;
+    width: 73px;
+    height: 73px;
+}
+
+.page-left .title-logo .title {
+    animation: title 1s both linear;
+    font-weight: 100;
+}
+
+.page-left .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    animation: line 1s linear both;
+}
+
+.page-left .content .subtitle {
+    margin-top: 6px;
+    height: 95px;
+
+    font-weight: 100;
+}
+
+.page-left .content .text {
+    text-align: right;
+    line-height: 41px;
+
+}
+
+.page-right {
+    /* width: 380px;*/
+    height: 395px;
+}
+
+.page02 {
+    background: #f8707b;
+}
+
+.page02 .page-left .title-logo .logo {
+    background: url(../images/title_bg.png);
+    color: #f76e7a;
+    animation: logo1 1s linear both;
+}
+
+.page02 .page-left .title-logo .title {
+    color: #fff;
+}
+
+.page02 .page-left .line {
+    background: #fff;
+}
+
+.page02 .page-left .content {
+    animation: content1 1s both ease;
+}
+
+.page02 .page-left .content .subtitle {
+    color: #fff;
+}
+
+.page02 .page-left .content .text {
+    color: #d8eab0;
+}
+
+.page03 {
+    background: #b7e9de;
+}
+
+.page03 .page-left .title-logo .logo {
+    background: url(../images/title_bg1.png);
+    color: #fff;
+    animation: logo2 1s linear both;
+}
+
+.page03 .page-left .title-logo .title {
+    color: #009799;
+}
+
+.page03 .page-left .line {
+    background: #009799;
+}
+
+.page03 .page-left .content {
+    animation: content2 1s both ease;
+}
+
+.page03 .page-left .content .subtitle {
+    color: #009799;
+}
+
+.page03 .page-left .content .text {
+    color: #009799;
+}
+
+.page04 {
+    background: #ffba85;
+}
+
+.page04 .page-left .title-logo .logo {
+    background: url(../images/title_bg.png);
+    color: #ffba85;
+    animation: logo1 1s linear both;
+}
+
+.page04 .page-left .title-logo .title {
+    color: #fff;
+}
+
+.page04 .page-left .line {
+    background: #fff;
+}
+
+.page04 .page-left .content {
+    animation: content1 1s both ease;
+}
+
+.page04 .page-left .content .subtitle {
+    color: #fff;
+}
+
+.page04 .page-left .content .text {
+    color: #f98c28;
+}
+
+.page05 {
+    background: #99c6d9;
+    padding-bottom: 20px;
+}
+
+.page05 .page-left .title-logo .logo {
+    background: url(../images/title_bg.png);
+    color: #99c6d9;
+    animation: logo2 1s linear both;
+}
+
+.page05 .page-left .title-logo .title {
+    color: #fff;
+}
+
+.page05 .page-left .line {
+    background: #fff;
+}
+
+.page05 .page-left .content {
+    animation: content2 1s both ease;
+}
+
+.page05 .page-left .content .subtitle {
+    color: #fff;
+}
+
+.page05 .page-left .content .text {
+    color: #3e80c0;
+}
+
+.btn{
+    position: fixed;
+    right: 20px;
+    top:200px;
+}
+.btn ol li a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+   /* border: 1px solid transparent;*/
+    background: #ccc;
+
+
+}
+.btn ol li{
+    margin-bottom: 10px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.btn ol li.cur{
+    border: 1px solid #fff;
+}
+.btn ol li.cur a{
+    background: #fff;
+}
